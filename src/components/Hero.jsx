@@ -1,5 +1,7 @@
 import React from 'react';
 import { MdEventAvailable } from 'react-icons/md';
+import { FiArrowDownRight } from "react-icons/fi";
+
 
 const Hero = () => {
   return (
@@ -10,21 +12,21 @@ const Hero = () => {
             <div className="inline-flex items-center gap-2">
               <img
                 src="https://framerusercontent.com/images/0bCFAnAEGTJhETKvjR39PAetyUs.webp"
-                alt="Bart Szabaciuk"
+                alt="Krystian Ostrowski"
                 className="w-14 h-14 rounded-full object-cover border border-gray-700"
               />
-              <div className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium bg-green-500/10 text-green-400 border border-green-500/20">
-                <MdEventAvailable className="w-2 h-2" aria-hidden="true" />
+              <div className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium">
+                <span className="dot"></span>
                 <span>Dostępny do zatrudnienia</span>
               </div>
             </div>
 
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
               Wzmacniam biznesy poprzez
-              <span className="text-blue-400"> intuicyjne projekty UI/UX</span>
+              <span className="text-blue-400"> nowoczesne strony WWW</span>
             </h1>
 
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed">
               Cześć, Krystian Ostrowski z tej strony - Twój potencjalny partner w projektowaniu i programowaniu. Łączę doświadczenie, dogłębną znajomość potrzeb użytkowników oraz znajomość najnowszych trendów, aby dostarczać rozwiązania, które angażują odbiorców i przynoszą realne rezultaty.
             </p>
 
@@ -33,7 +35,8 @@ const Hero = () => {
                 href="#work"
                 className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
               >
-                Zobacz projekty
+                Zobacz projekty&nbsp;<FiArrowDownRight className="w-6 h-6" aria-hidden="true" />
+
               </a>
               <a
                 href="https://calendly.com/kryki1999/30min"
@@ -41,12 +44,12 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 bg-green-500/30 text-green-400 font-medium rounded-lg border border-green-500/20 hover:bg-green-500/50 transition-colors"
               >
-                Zamów darmową rozmowę
+                Zamów darmową rozmowę&nbsp;<MdEventAvailable className="w-6 h-6" aria-hidden="true" />
               </a>
             </div>
           </div>
 
-          <div className="flex justify-center self-center">
+          <div className="flex justify-center self-center hidden md:block">
             <svg
               viewBox="0 0 600 400"
               className="w-full max-w-xl rounded-lg text-blue-400/60"

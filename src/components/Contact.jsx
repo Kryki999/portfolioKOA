@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { MdEventAvailable } from 'react-icons/md';
 const Contact = () => {
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -11,15 +11,15 @@ const Contact = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://calendly.com/szabaciuk-designer/30min"
+            href="https://calendly.com/kryki1999/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center justify-center px-8 py-4 bg-green-500/30 text-green-400 font-medium rounded-lg border border-green-500/20 hover:bg-green-500/50 transition-colors"
           >
-            Zamów darmową rozmowę
+            Zamów darmową rozmowę&nbsp;<MdEventAvailable className="w-6 h-6" aria-hidden="true" />
           </a>
           <a
-            href="mailto:bart@szabaciuk.com"
+            href="mailto:kryki1999@gmail.com"
             className="inline-flex items-center justify-center px-8 py-4 border border-gray-700 text-white font-medium rounded-lg hover:bg-gray-800 transition-colors"
           >
             Wyślij email

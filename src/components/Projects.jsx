@@ -41,14 +41,14 @@ const Projects = () => {
   ];
 
   return (
-    <section id="work" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+    <section id="work" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Selected Work</h2>
-          <p className="text-xl text-gray-300">Explore my recent projects</p>
+          <h2 className="text-4xl font-bold mb-4">Wybrane Projekty</h2>
+          <p className="text-xl text-gray-300">Obejrzyj moje ostatnie realizacje</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <a
               key={index}
@@ -59,7 +59,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-80 md:h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform">
@@ -69,38 +69,6 @@ const Projects = () => {
               </div>
             </a>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <div className="flex flex-wrap justify-center gap-8">
-            <a
-              href="https://www.szabaciuk.com/project-codi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition-colors"
-            >
-              <span className="font-bold">UI Animations</span>
-              <span className="block text-sm text-gray-400">June 2024</span>
-            </a>
-            <a
-              href="https://www.szabaciuk.com/project-logos"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition-colors"
-            >
-              <span className="font-bold">Logo Showcase</span>
-              <span className="block text-sm text-gray-400">2015-2024</span>
-            </a>
-            <a
-              href="https://www.szabaciuk.com/project-remi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition-colors"
-            >
-              <span className="font-bold">Remi - AI Language Teacher</span>
-              <span className="block text-sm text-gray-400">Dec 2015</span>
-            </a>
-          </div>
         </div>
       </div>
     </section>
