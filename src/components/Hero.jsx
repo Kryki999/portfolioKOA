@@ -47,6 +47,17 @@ const Hero = () => {
                 Zamów darmową rozmowę&nbsp;<MdEventAvailable className="w-6 h-6" aria-hidden="true" />
               </a>
             </div>
+
+            <div className="grid grid-cols-2 gap-4 mt-6">
+              <div className="text-center p-4 bg-gray-800 rounded-lg">
+                <div className="text-3xl font-bold text-blue-400">20+</div>
+                <div className="text-sm text-gray-400">Wykonane projekty</div>
+              </div>
+              <div className="text-center p-4 bg-gray-800 rounded-lg">
+                <div className="text-3xl font-bold text-blue-400">4+</div>
+                <div className="text-sm text-gray-400">Lata doświadczenia</div>
+              </div>
+            </div>
           </div>
 
           <div className="flex justify-center self-center hidden md:block">

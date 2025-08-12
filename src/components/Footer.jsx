@@ -19,12 +19,12 @@ const Footer = () => {
               LinkedIn
             </a>
             <a
-              href="https://dribbble.com/szabaciuk"
+              href="https://www.instagram.com/kryki1999"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              Dribbble
+              Instagram
             </a>
             <a
               href="https://twitter.com/buzzki"
