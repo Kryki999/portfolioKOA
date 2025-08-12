@@ -11,7 +11,7 @@ const Footer = () => {
 
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a
-              href="https://www.linkedin.com/in/szabaciuk"
+              href="https://www.linkedin.com/in/kryki1999"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -27,7 +27,7 @@ const Footer = () => {
               Dribbble
             </a>
             <a
-              href="https://twitter.com/szabaciuk"
+              href="https://twitter.com/buzzki"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"

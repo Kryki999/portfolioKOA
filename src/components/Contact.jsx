@@ -1,5 +1,7 @@
 import React from 'react';
 import { MdEventAvailable } from 'react-icons/md';
+import { HiOutlineMail } from "react-icons/hi";
+
 const Contact = () => {
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -20,9 +22,9 @@ const Contact = () => {
           </a>
           <a
             href="mailto:kryki1999@gmail.com"
-            className="inline-flex items-center justify-center px-8 py-4 border border-gray-700 text-white font-medium rounded-lg hover:bg-gray-800 transition-colors"
+            className="inline-flex items-center justify-center px-8 py-4 bg-blue-500 border border-gray-700 text-white font-medium rounded-lg hover:bg-blue-800 transition-colors"
           >
-            Wyślij email
+            Wyślij email&nbsp;<HiOutlineMail className="w-6 h-6" aria-hidden="true" />
           </a>
         </div>
 

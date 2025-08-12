@@ -1,42 +1,42 @@
 import React from 'react';
+import gastropro from '@/assets/gastropro.webp';
+import medilink from '@/assets/doctor.png';
+import luxestate from '@/assets/luxestate.jpg';
+import ticketflow from '@/assets/ticketflow.jpg';
+import shopwise from '@/assets/shopwise.jpeg';
+
 
 const Projects = () => {
   const projects = [
     {
-      title: "Crypto Wallet Mobile App",
+      title: "GastroPro - Platforma Zamówień Online",
+      date: "Aug 2025",
+      image: gastropro,
+      slug: "gastropro"
+    },
+    {
+      title: "MediLink - Portal Rezerwacji Wizyt Lekarskich",
+      date: "Jul 2025",
+      image: medilink,
+      slug: "medilink"
+    },
+    {
+      title: "LuxEstate - Strona Sprzedaży Nieruchomości Premium",
+      date: "May 2025",
+      image: luxestate,
+      slug: "luxestate"
+    },
+    {
+      title: "TicketFlow - Platforma Sprzedaży Biletów Online",
+      date: "Apr 2025",
+      image: ticketflow,
+      slug: "ticketflow"
+    },
+    {
+      title: "ShopWise - Sklep Internetowy z AI Rekomendacjami",
       date: "Feb 2025",
-      image: "https://framerusercontent.com/images/HTFUlTpbcv1iT2PDq0AQDTHq1Xw.jpg?lossless=1",
-      slug: "wallie"
-    },
-    {
-      title: "Netcomm Brand Identity",
-      date: "Jun 2024",
-      image: "https://framerusercontent.com/images/fYZvdHNASZ5aC1zHhjrQdE4SKY.png",
-      slug: "netcomm"
-    },
-    {
-      title: "CRM for a big logistics company",
-      date: "Nov 2024",
-      image: "https://framerusercontent.com/images/QCy1DWq7fuOVKHUkKR2g70I4Cg.jpg",
-      slug: "crm"
-    },
-    {
-      title: "Modern UI Components",
-      date: "Nov 2023",
-      image: "https://framerusercontent.com/images/tcqZCoWG3QnRgnfwRbS9vwCErI.jpg",
-      slug: "components"
-    },
-    {
-      title: "Next-gen Trading Platform",
-      date: "Nov 2022",
-      image: "https://framerusercontent.com/images/d6Wn1VsncKotCFdMMuxzcrAXI.png",
-      slug: "trading"
-    },
-    {
-      title: "Kubernetes Data Plan Managing App",
-      date: "Aug 2021",
-      image: "https://framerusercontent.com/images/mOQtZBOIyXaaa6xGNRdrZEtZGKE.png",
-      slug: "ondat"
+      image: shopwise,
+      slug: "shopwise"
     }
   ];
 
@@ -55,16 +55,15 @@ const Projects = () => {
               href={`/project/${project.slug}`}
               className="group block"
             >
-              <div className="relative overflow-hidden rounded-lg bg-gray-800 hover:transform hover:scale-105 transition-all duration-300">
+              <div className="relative overflow-hidden rounded-lg hover:transform hover:scale-105 transition-all duration-300">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-80 md:h-[500px] object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform">
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-sm text-gray-300">{project.date}</p>
+                <div className="p-4">
+                  <h3 className="text-xl font-bold">{project.title}</h3>
+                  <p className="text-sm text-gray-300 mt-1">{project.date}</p>
                 </div>
               </div>
             </a>

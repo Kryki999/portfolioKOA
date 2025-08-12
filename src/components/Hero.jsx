@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdEventAvailable } from 'react-icons/md';
 import { FiArrowDownRight } from "react-icons/fi";
-
+import hero from '@/assets/hero.webp';
 
 const Hero = () => {
   return (
@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2">
               <img
-                src="https://framerusercontent.com/images/0bCFAnAEGTJhETKvjR39PAetyUs.webp"
+                src={hero}
                 alt="Krystian Ostrowski"
                 className="w-14 h-14 rounded-full object-cover border border-gray-700"
               />

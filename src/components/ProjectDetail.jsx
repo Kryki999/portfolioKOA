@@ -1,48 +1,81 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import gastropro from '@/assets/gastropro.webp';
+import medilink from '@/assets/doctor.png';
+import luxestate from '@/assets/luxestate.jpg';
+import ticketflow from '@/assets/ticketflow.jpg';
+import shopwise from '@/assets/shopwise.jpeg';
 
 const projects = [
     {
-        slug: 'wallie',
-        title: 'Crypto Wallet Mobile App',
+        slug: 'gastropro',
+        title: 'GastroPro - Platforma Zamówień Online',
+        date: 'Aug 2025',
+        cover: gastropro,
+        summary: 'Nowoczesna aplikacja PWA dla restauracji z obsługą zamówień online i rezerwacji stolików.',
+        goals: [
+            'Zwiększenie liczby zamówień dzięki zoptymalizowanemu procesowi checkout',
+            'Pełna responsywność i UX zaprojektowany dla urządzeń mobilnych',
+            'Integracja z systemami płatności i kurierów'
+        ],
+        role: 'Product Design, Frontend, Backend',
+        tools: ['Next.js', 'TypeScript', 'Tailwind', 'MongoDB', 'Stripe API']
+    },
+    {
+        slug: 'medilink',
+        title: 'MediLink - Portal Rezerwacji Wizyt Lekarskich',
+        date: 'Jul 2025',
+        cover: medilink,
+        summary: 'Platforma umożliwiająca pacjentom szybkie umawianie wizyt online z lekarzami.',
+        goals: [
+            'Łatwe filtrowanie lekarzy i specjalizacji',
+            'Integracja z kalendarzem Google i iCal',
+            'Wysoka wydajność i niezawodność dzięki SSR w Next.js'
+        ],
+        role: 'Frontend, Backend',
+        tools: ['Next.js', 'TypeScript', 'PostgreSQL', 'Tailwind', 'Strapi CMS']
+    },
+    {
+        slug: 'luxestate',
+        title: 'LuxEstate - Strona Sprzedaży Nieruchomości Premium',
+        date: 'May 2025',
+        cover: luxestate,
+        summary: 'Serwis ogłoszeniowy z interaktywną mapą i wirtualnymi spacerami 3D po nieruchomościach.',
+        goals: [
+            'Zwiększenie konwersji dzięki wideo i spacerom VR',
+            'Filtrowanie ogłoszeń w czasie rzeczywistym',
+            'Integracja z systemami CRM po stronie klienta'
+        ],
+        role: 'Fullstack Development',
+        tools: ['React.js', 'TypeScript', 'Vite', 'MongoDB', 'Mapbox API']
+    },
+    {
+        slug: 'ticketflow',
+        title: 'TicketFlow - Platforma Sprzedaży Biletów i Rezerwacji Miejsc',
+        date: 'Apr 2025',
+        cover: ticketflow,
+        summary: 'Nowoczesna aplikacja webowa do obsługi wydarzeń kulturalnych i sportowych, sprzedaży biletów oraz rezerwacji miejsc w czasie rzeczywistym.',
+        goals: [
+            'Błyskawiczny proces zakupu zoptymalizowany pod urządzenia mobilne',
+            'Wizualny podgląd sali z możliwością wyboru miejsc',
+            'Integracja z systemami płatności, fakturowaniem oraz kodami QR przy wejściu'
+        ],
+        role: 'Product Design, Frontend, Backend',
+        tools: ['Next.js', 'TypeScript', 'Strapi', 'PostgreSQL', 'Tailwind']
+    },
+    {
+        slug: 'shopwise',
+        title: 'ShopWise - Sklep Internetowy z AI Rekomendacjami',
         date: 'Feb 2025',
-        cover: 'https://framerusercontent.com/images/HTFUlTpbcv1iT2PDq0AQDTHq1Xw.jpg?lossless=1',
-        summary: 'Mobile crypto wallet with clean UI, dark theme and smooth interactions.'
-    },
-    {
-        slug: 'netcomm',
-        title: 'Netcomm Brand Identity',
-        date: 'Jun 2024',
-        cover: 'https://framerusercontent.com/images/fYZvdHNASZ5aC1zHhjrQdE4SKY.png',
-        summary: 'Brand identity system and UI kit in a sleek, modern aesthetic.'
-    },
-    {
-        slug: 'crm',
-        title: 'CRM for a big logistics company',
-        date: 'Nov 2024',
-        cover: 'https://framerusercontent.com/images/QCy1DWq7fuOVKHUkKR2g70I4Cg.jpg',
-        summary: 'Complex enterprise CRM with data-heavy screens and clear information hierarchy.'
-    },
-    {
-        slug: 'components',
-        title: 'Modern UI Components',
-        date: 'Nov 2023',
-        cover: 'https://framerusercontent.com/images/tcqZCoWG3QnRgnfwRbS9vwCErI.jpg',
-        summary: 'Reusable component library for rapid prototyping in dark mode.'
-    },
-    {
-        slug: 'trading',
-        title: 'Next-gen Trading Platform',
-        date: 'Nov 2022',
-        cover: 'https://framerusercontent.com/images/d6Wn1VsncKotCFdMMuxzcrAXI.png',
-        summary: 'High-performance trading dashboard with advanced charts and real-time data.'
-    },
-    {
-        slug: 'ondat',
-        title: 'Kubernetes Data Plan Managing App',
-        date: 'Aug 2021',
-        cover: 'https://framerusercontent.com/images/mOQtZBOIyXaaa6xGNRdrZEtZGKE.png',
-        summary: 'Kubernetes data management UI with clear navigation and focused workflows.'
+        cover: shopwise,
+        summary: 'E-commerce z inteligentnym systemem rekomendacji produktów opartym o AI.',
+        goals: [
+            'Zwiększenie średniej wartości koszyka poprzez personalizację',
+            'Błyskawiczne ładowanie dzięki optymalizacji Vite i SSR',
+            'Pełna optymalizacja SEO dla lepszej widoczności w Google'
+        ],
+        role: 'Fullstack Development',
+        tools: ['Next.js', 'TypeScript', 'Strapi', 'MongoDB', 'Tailwind', 'OpenAI API']
     },
 ];
 
@@ -89,19 +122,19 @@ export default function ProjectDetail() {
 
                             <h3 className="text-xl font-semibold mt-8">Cele projektu</h3>
                             <ul className="list-disc list-inside text-gray-300 space-y-2">
-                                <li>Nowoczesny, czytelny interfejs</li>
-                                <li>Responsywny układ i świetna wydajność</li>
-                                <li>Spójna ciemna stylistyka z akcentami</li>
+                                {(project.goals || []).map((goal, idx) => (
+                                    <li key={idx}>{goal}</li>
+                                ))}
                             </ul>
                         </div>
                         <aside className="space-y-4 self-center">
                             <div className="bg-gray-800/60 border border-gray-700 rounded-lg p-4">
                                 <h4 className="font-semibold mb-2">Rola</h4>
-                                <p className="text-gray-300">UI/UX, Frontend</p>
+                                <p className="text-gray-300">{project.role}</p>
                             </div>
                             <div className="bg-gray-800/60 border border-gray-700 rounded-lg p-4">
                                 <h4 className="font-semibold mb-2">Narzędzia</h4>
-                                <p className="text-gray-300">Figma, React, Tailwind</p>
+                                <p className="text-gray-300">{Array.isArray(project.tools) ? project.tools.join(', ') : project.tools}</p>
                             </div>
                         </aside>
                     </div>
