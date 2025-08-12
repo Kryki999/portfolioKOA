@@ -30,7 +30,6 @@ function App() {
             element={
               <>
                 <Hero />
-                <About />
                 <Projects />
                 <Contact />
               </>

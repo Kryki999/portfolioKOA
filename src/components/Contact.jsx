@@ -14,7 +14,7 @@ const Contact = () => {
             href="https://calendly.com/kryki1999/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 bg-green-500/30 text-green-400 font-medium rounded-lg border border-green-500/20 hover:bg-green-500/50 transition-colors"
+            className="inline-flex items-center justify-center px-8 py-4 bg-green-500 text-white font-medium rounded-lg border border-green-500/20 hover:bg-green-500/50 transition-colors"
           >
             Zamów darmową rozmowę&nbsp;<MdEventAvailable className="w-6 h-6" aria-hidden="true" />
           </a>

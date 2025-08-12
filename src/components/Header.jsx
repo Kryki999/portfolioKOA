@@ -8,19 +8,19 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <a href="#home" className="text-2xl font-bold text-white">
+            <a href="/#home" className="text-2xl font-bold text-white">
               KO agency
             </a>
           </div>
 
           <nav className="hidden md:flex space-x-8">
-            <a href="#work" className="text-gray-300 hover:text-white transition-colors">
+            <a href="/#work" className="text-gray-300 hover:text-white transition-colors">
               Projekty
             </a>
-            <a href="#about" className="text-gray-300 hover:text-white transition-colors">
+            <a href="/#home" className="text-gray-300 hover:text-white transition-colors">
               O mnie
             </a>
-            <a href="#contact" className="text-gray-300 hover:text-white transition-colors">
+            <a href="/#contact" className="text-gray-300 hover:text-white transition-colors">
               Kontakt
             </a>
           </nav>
@@ -40,13 +40,13 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-800">
             <nav className="flex flex-col space-y-4">
-              <a href="#work" className="text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
+              <a href="/#work" className="text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
                 Projekty
               </a>
-              <a href="#about" className="text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
+              <a href="/#home" className="text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
                 O mnie
               </a>
-              <a href="#contact" className="text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
+              <a href="/#contact" className="text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
                 Kontakt
               </a>
             </nav>
